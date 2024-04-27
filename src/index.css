@@ -1,13 +1,126 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* common style */
+* {
+  margin: 0px;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* header section style / home section style */
+header {
+  background: #002425;
+  padding-top: 30px;
+}
+.website-title {
+  width: 94px;
+  height: 36px;
+  flex-shrink: 0;
+  /* 2 section one style */
+  color: #fff;
+  text-align: center;
+  font-family: Kapakana;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 75.8%; /* 15.16px */
+  margin-left: 48px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+}
+li a {
+  text-decoration: none;
+  color: #c7efcf;
+}
+ul li {
+  list-style: none;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 75.8%;
+  text-transform: uppercase;
+  margin-left: 87px;
+}
+.button-01 {
+  border: 0px;
+  background: #005456;
+  width: 167px;
+  height: 47px;
+  flex-shrink: 0;
+  padding: 16px 44px;
+  margin-right: 50px;
+  color: #c7efcf;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 75.8%; /* 15.16px */
+  text-transform: uppercase;
+}
+/* banner section style */
+.banner {
+  margin-left: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.banner-title {
+  color: #e7ffe6;
+  font-family: "Crimson Pro";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 48px */
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+  margin-top: 275px;
+}
+.banner-description {
+  width: 481px;
+  color: #c7efcf;
+  font-family: "Crimson Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 90%; /* 28.8px */
+  letter-spacing: -0.64px;
+  margin-top: 15px;
+}
+.button-02 {
+  border: 0px;
+  background: #005456;
+  width: 263px;
+  height: 47px;
+  flex-shrink: 0;
+  color: #effdff;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  padding: 13px 20px;
+  margin-top: 40px;
+}
+.banner-image {
+  margin-top: 220px;
+  margin-bottom: 60px;
+}
+/* banner bottom section style */
+.bottom-section {
+  margin-top: 204pxJ;
+}
+.bottom-section-title {
+  color: #c7efcf;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
 }
