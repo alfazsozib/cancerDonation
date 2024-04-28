@@ -123,4 +123,139 @@ ul li {
   line-height: 100%; /* 20px */
   letter-spacing: -0.4px;
   text-transform: uppercase;
+  margin-top: 204px;
+}
+/* WhatAreWE section style */
+main {
+  background: #002425;
+}
+.WhatAreWE {
+  position: relative;
+  height: 1430px;
+}
+.WhatAreWE-image img {
+  width: 100%;
+}
+.WhatAreWe-banner {
+  background-color: rgba(0, 0, 0, 0.36);
+  position: absolute;
+  top: 860px;
+  left: 100px;
+  right: 100px;
+  padding: 0px 90px;
+  border-radius: 10px;
+}
+.WhatAreWe-banner-title {
+  color: #c7efcf;
+  font-family: Manrope;
+  text-align: center;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%; /* 110.4px */
+  letter-spacing: -1.92px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.WhatAreWe-banner-description {
+  color: #effdff;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%; /* 27.6px */
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+.Our-Mission {
+  color: #c7efcf;
+  font-family: Manrope;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.Our-Mission-description {
+  color: #effdff;
+  font-family: Manrope;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+/* What We Do section style */
+.WhatWeDO {
+  position: relative;
+  height: 2110px;
+}
+.WhatWeDO-image img {
+  width: 100%;
+}
+.WhatWeDO-banner-container {
+  margin: auto;
+  display: grid;
+  gap: 30px;
+  grid-template-rows: 150px repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  position: absolute;
+  top: 842px;
+  left: 100px;
+  right: 100px;
+}
+.box {
+  border-radius: 10px;
+}
+#box-1 {
+  grid-column: span 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #c7efcf;
+  font-family: Manrope;
+  text-align: center;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%; /* 110.4px */
+  letter-spacing: -1.92px;
+  text-transform: uppercase;
+}
+#box-2,
+#box-3,
+#box-4,
+#box-5,
+#box-6,
+#box-7 {
+  background-color: rgba(0, 0, 0, 0.36);
+}
+.box-title {
+  padding: 30px 50px 30px 50px ;
+  color: #c7efcf;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 36.8px */
+  text-transform: uppercase;
+}
+.box-description {
+  padding: 0px 35px 25px 35px;
+  color: #effdff;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 105%; /* 25.2px */
+  text-transform: uppercase;
 }
