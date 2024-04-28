@@ -131,7 +131,7 @@ main {
 }
 .WhatAreWE {
   position: relative;
-  height: 1450px; 
+  height: 1460px; 
 }
 .WhatAreWE-image img {
   width: 100%;
@@ -139,7 +139,7 @@ main {
 .WhatAreWe-banner {
   background-color: rgba(0, 0, 0, 0.36);
   position: absolute;
-  top: 86J0px;
+  top: 860px;
   left: 100px;
   right: 100px;
   padding: 0px 90px;
