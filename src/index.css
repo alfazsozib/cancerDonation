@@ -132,7 +132,7 @@ main {
 }
 .WhatAreWE {
   position: relative;
-  height: 1460px; 
+  height: 1460px;
 }
 .WhatAreWE-image img {
   width: 100%;
@@ -204,7 +204,7 @@ main {
   margin: auto;
   display: grid;
   gap: 30px;
-  grid-template-rows: 150px repeat(3, 1fr);
+  grid-template-rows: 150px repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
   position: absolute;
   top: 842px;
@@ -239,7 +239,7 @@ main {
   background-color: rgba(0, 0, 0, 0.36);
 }
 .box-title {
-  padding: 30px 50px 30px 50px ;
+  padding: 30px 50px 30px 50px;
   color: #c7efcf;
   text-align: center;
   font-family: Manrope;
@@ -260,3 +260,136 @@ main {
   line-height: 105%; /* 25.2px */
   text-transform: uppercase;
 }
+/* Donate section style */
+.Donate-section-title {
+  color: #c7efcf;
+  font-family: Manrope;
+  text-align: center;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%; /* 110.4px */
+  letter-spacing: -1.92px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+.Donate-banner {
+  max-width: 1000px;
+  margin: auto auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Donate-Information {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100px) 50px 50px;
+  column-gap: 20px;
+  row-gap: 20px;
+  width: 100%;
+}
+.Donate-bannerImage {
+  margin-left: 85px;
+  width: 490px;
+  height: 640px;
+  flex-shrink: 0;
+}
+.BannerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ValueBox-7,
+#ValueBox-8,
+#ValueBox-9,
+#ValueBox-10,
+#ValueBox-11,
+#ValueBox-12 {
+  grid-column: span 3;
+}
+#ValueBox-1,
+#ValueBox-2,
+#ValueBox-3,
+#ValueBox-4,
+#ValueBox-5,
+#ValueBox-6 {
+  background: rgba(199, 239, 207, 0.2);
+  color: #c7efcf;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 36px */
+}
+#UserBox-1 {
+  background: rgba(199, 239, 207, 0.2);
+  color: #c7efcf;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 20px */
+  opacity: 0.75;
+  border: 0px;
+  padding-left: 10px;
+}
+#UserBox-2 {
+  color: #c7efcf;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 20px */
+  border: 2px solid #c7efcf;
+  padding-left: 10px;
+}
+#UserBox-2,
+#UserBox-3,
+#UserBox-4,
+#UserBox-5 {
+  background-color: #002425;
+}
+#UserBox-3,
+#UserBox-4,
+#UserBox-5 {
+  color: rgba(239, 253, 255, 0.9);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  border: 0px #002425;
+  border-bottom: 2px solid #c7efcf;
+}
+#UserBox-6 {
+  background-color: #c7efcf;
+  color: #040404;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  border: 0px;
+}
+input:focus {
+  outline: none;
+}
+.InformationBox {
+  width: 100%;
+  height: 100%;
+}
+.Donate-FooterSection {
+  margin-top: 60px;
+  color: #fff;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 115%; /* 55.2px */
+  text-transform: uppercase;
+}
+hr {
+  margin-top: 60px;
+  color: #c7efcf;
+}
+/* Footer Section style */
