@@ -132,7 +132,7 @@ main {
 }
 .WhatAreWE {
   position: relative;
-  height: 1460px;
+  height: 1515px;
 }
 .WhatAreWE-image img {
   width: 100%;
@@ -191,7 +191,7 @@ main {
   line-height: 40px;
   text-transform: uppercase;
   margin-top: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 /* What We Do section style */
 .WhatWeDO {
@@ -399,7 +399,7 @@ hr {
 /* Responsive For Medium size devices */
 @media screen and (max-width: 1800px) {
   .WhatAreWE {
-    height: 1400px;
+    height: 1415px;
   }
   .WhatAreWe-banner {
     top: 648px;
