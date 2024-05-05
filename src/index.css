@@ -140,7 +140,7 @@ main {
 .WhatAreWe-banner {
   background-color: rgba(0, 0, 0, 0.36);
   position: absolute;
-  top: 860px;
+  top: 850px;
   left: 100px;
   right: 100px;
   padding: 0px 90px;
@@ -157,6 +157,7 @@ main {
   letter-spacing: -1.92px;
   text-transform: uppercase;
   margin-top: 20px;
+  margin-bottom: 58px;
 }
 .WhatAreWe-banner-description {
   color: #effdff;
@@ -393,3 +394,20 @@ hr {
   color: #c7efcf;
 }
 /* Footer Section style */
+
+
+/* Responsive For Medium size devices */
+@media screen and (max-width: 1800px) {
+  .WhatAreWE {
+    height: 1400px;
+  }
+  .WhatAreWe-banner {
+    top: 648px;
+  }
+  .WhatWeDO {
+    height: 2280px;
+  }
+  .WhatWeDO-banner-container {
+    top: 642px;
+  }
+}
