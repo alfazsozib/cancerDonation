@@ -5,6 +5,8 @@ import rectangle_1 from '../assets/images/rectangle_1.png';
 // import ellipse_3 from '../assets/images/ellipse_3.svg';
 // import ellipse_4 from '../assets/images/ellipse_4.svg';
 // import ellipse_5 from '../assets/images/ellipse_5.svg';
+
+
 function Home() {
   return (
     <header>

@@ -1,37 +1,50 @@
-import React from "react";
+import React,{useState} from "react";
 import rectangle_24 from "../assets/images/rectangle_24.png";
 
 function Donate() {
+  const [donationValue,setDonationValue] = useState("Enter your amount (BDT)"); 
+  const setDonation=(value)=>{
+    setDonationValue(value)
+  }
+
+  const setCustomDonation=(event)=>{
+      let customDonation = event.target.value
+      setDonationValue(customDonation)
+  }
+
+  console.log(donationValue)
   return (
     <main>
       <div className="Donate-section">
         <h1 className="Donate-section-title">donate</h1>
-        <div /*class="a"*/ className="Donate-banner">
-          <div /*class="container"*/ className="Donate-Information">
-            <div className="BannerBox" id="ValueBox-1">
-              $1
+        <div className="Donate-banner">
+          <div className="Donate-Information">
+            <div onClick={()=>setDonation('50')} className="BannerBox" id="ValueBox-1">
+            BDT 50
             </div>
-            <div className="BannerBox" id="ValueBox-2">
-              $5
+            <div onClick={()=>setDonation('100')} className="BannerBox" id="ValueBox-2">
+            BDT 100
             </div>
-            <div className="BannerBox" id="ValueBox-3">
-              $10
+            <div onClick={()=>setDonation('200')}  className="BannerBox" id="ValueBox-3">
+            BDT 200
             </div>
-            <div className="BannerBox" id="ValueBox-4">
-              $50
+            <div onClick={()=>setDonation('300')} className="BannerBox" id="ValueBox-4">
+            BDT 300
             </div>
-            <div className="BannerBox" id="ValueBox-5">
-              $100
+            <div onClick={()=>setDonation('500')} className="BannerBox" id="ValueBox-5">
+            BDT 500
             </div>
-            <div className="BannerBox" id="ValueBox-6">
-              $500
+            <div onClick={()=>setDonation('1000')} className="BannerBox" id="ValueBox-6">
+            BDT 1000
             </div>
             <div className="BannerBox" id="ValueBox-7">
               <input
                 type="text"
                 className="InformationBox"
                 id="UserBox-1"
-                placeholder="Enter your amount (USD)"
+                placeholder={"BDT  "+donationValue}
+                onChange={setCustomDonation}
+                // value={donationValue}
               />
             </div>
             <div className="BannerBox" id="ValueBox-8">
