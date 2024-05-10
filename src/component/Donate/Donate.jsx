@@ -1,8 +1,19 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import rectangle_24 from "../assets/images/rectangle_24.png";
 
 function Donate() {
-  const [donationValue,setDonationValue] = useState("Enter your amount (BDT)"); 
+  const initialDonationValue = "Enter your amount (BDT)";
+  const initialDonorName = "Enter Your Good Name ";
+  const initialDonorEmail = "Enter Your Email Address ";
+  const initialDonorCountry = "Please Choose Your Country ";
+
+  const [donationValue, setDonationValue] = useState(initialDonationValue);
+  const [donorName, setDonorName] = useState(initialDonorName);
+  const [donorEmail, setDonorEmail] = useState(initialDonorEmail);
+  const [donorCountry, setDonorCountry] = useState(initialDonorCountry);
+
+  const formData = new FormData();
+
   const setDonation=(value)=>{
     setDonationValue(value)
   }
@@ -12,7 +23,34 @@ function Donate() {
       setDonationValue(customDonation)
   }
 
-  console.log(donationValue)
+  const donarNameSet=(event)=>{
+      setDonorName(event.target.value)
+  }
+
+  const donarEmailSet=(event)=>{
+    setDonorEmail(event.target.value)
+  }
+
+  const donarCountrySet=(event)=>{
+  setDonorCountry(event.target.value)
+  } 
+
+  formData.append("name",donorName)
+  formData.append("email",donorEmail)
+  formData.append("country",donorCountry)
+
+  
+
+  const submitDonation = () => {
+    console.log("Submitting Donation...");
+    setDonationValue(initialDonationValue);
+    setDonorName(initialDonorName);
+    setDonorEmail(initialDonorEmail);
+    setDonorCountry(initialDonorCountry);
+  };
+
+
+
   return (
     <main>
       <div className="Donate-section">
@@ -42,9 +80,8 @@ function Donate() {
                 type="text"
                 className="InformationBox"
                 id="UserBox-1"
-                placeholder={"BDT  "+donationValue}
+                placeholder={donationValue}
                 onChange={setCustomDonation}
-                // value={donationValue}
               />
             </div>
             <div className="BannerBox" id="ValueBox-8">
@@ -60,7 +97,8 @@ function Donate() {
                 type="text"
                 className="InformationBox"
                 id="UserBox-3"
-                placeholder="Your Name"
+                placeholder={donorName}
+                onChange={donarNameSet}
               />
             </div>
             <div className="BannerBox" id="ValueBox-10">
@@ -68,7 +106,8 @@ function Donate() {
                 type="email"
                 className="InformationBox"
                 id="UserBox-4"
-                placeholder="Write Your E-mail"
+                placeholder={donorEmail}
+                onChange={donarEmailSet}
               />
             </div>
             <div className="BannerBox" id="ValueBox-11">
@@ -76,7 +115,8 @@ function Donate() {
                 type="text"
                 className="InformationBox"
                 id="UserBox-5"
-                placeholder="Country / Region"
+                placeholder={donorCountry}
+                onChange={donarCountrySet}
               />
             </div>
             <div className="BannerBox" id="ValueBox-12">
@@ -85,6 +125,7 @@ function Donate() {
                 id="UserBox-6"
                 type="button"
                 value="DONATE"
+                onClick={submitDonation}
               />
             </div>
           </div>
