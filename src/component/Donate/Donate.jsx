@@ -57,22 +57,22 @@ function Donate() {
         <h1 className="Donate-section-title">donate</h1>
         <div className="Donate-banner">
           <div className="Donate-Information">
-            <div onClick={()=>setDonation('50')} className="BannerBox" id="ValueBox-1">
+            <div onClick={()=>setDonation('50')} className="BannerBox cursor-pointer" id="ValueBox-1">
             BDT 50
             </div>
-            <div onClick={()=>setDonation('100')} className="BannerBox" id="ValueBox-2">
+            <div onClick={()=>setDonation('100')} className="BannerBox cursor-pointer" id="ValueBox-2">
             BDT 100
             </div>
-            <div onClick={()=>setDonation('200')}  className="BannerBox" id="ValueBox-3">
+            <div onClick={()=>setDonation('200')}  className="BannerBox cursor-pointer" id="ValueBox-3">
             BDT 200
             </div>
-            <div onClick={()=>setDonation('300')} className="BannerBox" id="ValueBox-4">
+            <div onClick={()=>setDonation('300')} className="BannerBox cursor-pointer" id="ValueBox-4">
             BDT 300
             </div>
-            <div onClick={()=>setDonation('500')} className="BannerBox" id="ValueBox-5">
+            <div onClick={()=>setDonation('500')} className="BannerBox cursor-pointer" id="ValueBox-5">
             BDT 500
             </div>
-            <div onClick={()=>setDonation('1000')} className="BannerBox" id="ValueBox-6">
+            <div onClick={()=>setDonation('1000')} className="BannerBox cursor-pointer" id="ValueBox-6">
             BDT 1000
             </div>
             <div className="BannerBox" id="ValueBox-7">
@@ -90,6 +90,7 @@ function Donate() {
                 className="InformationBox"
                 id="UserBox-2"
                 placeholder="Donate using cryptocurrency"
+                disabled
               />
             </div>
             <div className="BannerBox" id="ValueBox-9">
