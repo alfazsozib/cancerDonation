@@ -100,6 +100,7 @@ const handleSubmitLogin = async (e) => {
                   className="px-20 py-2 rounded-lg"
                   type="text"
                   name="firstName"
+                  required={true}
                   placeholder="Enter First Name"
                   value={formData.firstName}
                   onChange={handleChange}
@@ -116,21 +117,24 @@ const handleSubmitLogin = async (e) => {
                   className="px-20 py-2 rounded-lg"
                   type="email"
                   name="email"
+                  required
                   placeholder="Enter Email"
                   value={formData.email}
                   onChange={handleChange}
                 />
                 <input
                   className="px-20 py-2 rounded-lg"
-                  type="text"
+                  type="password"
                   name="password"
+                  required
                   placeholder="Enter Password"
                   value={formData.password}
                   onChange={handleChange}
                 />
 
                 <button
-                  onClick={handleSubmit}
+                //   onClick={handleSubmit}
+                type="submit"
                   className="bg-[#000000] font-serif text-white hover:bg-white hover:text-black font-bold py-2 rounded-lg"
                 >
                   Register
@@ -148,13 +152,15 @@ const handleSubmitLogin = async (e) => {
                     name="email"
                     value={loginData.email}
                     onChange={handleChangeLogin}
+                    required
                     placeholder="Enter Email Address"
                   />
                   <input
                     className="px-20 py-2 rounded-lg"
-                    type="text"
+                    type="password"
                     name="password"
                     value={loginData.password}
+                    required
                     onChange={handleChangeLogin}
                     placeholder="Enter Password"
                   />
