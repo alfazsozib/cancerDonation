@@ -14,12 +14,12 @@ function Home() {
       <nav>
         <h3 className="website-title" >Unknown <br/>Charity</h3>
         <ul>
-          <li><a href="">Who are we</a></li>
-          <li><a href="">what we do</a></li>
-          <li><a href="">Volunteers</a></li>
+          <li><a href="#whoWeAre">Who are we</a></li>
+          <li><a href="#whatWeDo">what we do</a></li>
+          {/* <li><a href="">Volunteers</a></li> */}
           <li><a href="">Donator's</a></li>
         </ul>
-        <button className="button-01">donate</button>
+        <button className="button-01"><a href="#donate">donate</a></button>
       </nav>
       <div className="banner">
         <div className="banner-content">

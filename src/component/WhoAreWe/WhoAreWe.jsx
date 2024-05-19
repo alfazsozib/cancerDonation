@@ -3,7 +3,7 @@ import rectangle_4 from "../assets/images/rectangle_4.png";
 function WhoAreWe() {
   return (
     <main>
-        <div className="WhatAreWE">
+      <div className="WhatAreWE" id="whoWeAre">
       <div className="WhatAreWE-image"><img src={rectangle_4} alt="" /></div>
       <div className="WhatAreWe-banner">
         <h1 className="WhatAreWe-banner-title">WHo are we?</h1>

@@ -60,4 +60,10 @@ app.post('/login', async (req, res) => {
     }
 });
 
+app.get('/donator', async (req,res)=>{
+    const user = await User.findOne({});
+    res.json(user)
+})
+
+
 app.listen(PORT, () => console.log(`Server is running on http://localhost:${PORT}`));

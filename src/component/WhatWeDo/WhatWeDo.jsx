@@ -4,7 +4,7 @@ import rectangle_6 from "../assets/images/rectangle_6.png";
 function WhatWeDo() {
   return (
     <main>
-      <div className="WhatWeDO">
+      <div className="WhatWeDO" id="whatWeDo">
         <div className="WhatWeDO-image">
           <img src={rectangle_6} alt="" />
         </div>

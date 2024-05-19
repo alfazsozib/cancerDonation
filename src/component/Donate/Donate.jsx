@@ -53,7 +53,7 @@ function Donate() {
 
   return (
     <main>
-      <div className="Donate-section">
+      <div className="Donate-section" id="donate">
         <h1 className="Donate-section-title">donate</h1>
         <div className="Donate-banner">
           <div className="Donate-Information">
