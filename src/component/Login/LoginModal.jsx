@@ -164,7 +164,7 @@ const handleSubmitLogin = async (e) => {
                     onChange={handleChangeLogin}
                     placeholder="Enter Password"
                   />
-                  <button className="bg-[#000000] font-serif text-white hover:bg-white hover:text-black font-bold py-2 rounded-lg">
+                  <button type="submit" className="bg-[#000000] font-serif text-white hover:bg-white hover:text-black font-bold py-2 rounded-lg">
                     Login
                   </button>
                   <button
