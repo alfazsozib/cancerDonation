@@ -17,6 +17,7 @@ function Home() {
           <li><a href="">Who are we</a></li>
           <li><a href="">what we do</a></li>
           <li><a href="">Volunteers</a></li>
+          <li><a href="">Donator's</a></li>
         </ul>
         <button className="button-01">donate</button>
       </nav>
